@@ -1,0 +1,24 @@
+{
+    "manifest_version": 3,
+    "name": "Amazon product reminder",
+    "description": "Look in Amazon the best option and save in your local WebBrowser",
+    "version": "1.0",
+    "permissions": ["storage", "activeTab"],
+    "content_scripts": [
+        {
+            "matches": ["https://www.amazon.com/*", "https://www.amazon.es/*", "https://www.amazon.com.mx/*"],
+            "css":["content_scripts.css"],
+            "js": ["content-script.js"]
+        }
+    ],
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": "./IMG/logo_128.png"
+    },
+    "icons": {
+        "16": "IMG/logo_16.png",
+        "32": "IMG/logo_32.png",
+        "48": "IMG/logo_48.png",
+        "128": "IMG/logo_128.png"
+    }
+}

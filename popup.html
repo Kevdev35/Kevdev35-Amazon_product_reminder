@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+  <style>
+    body {
+      width: 300px;
+      padding: 10px;
+      font-family: Arial, sans-serif;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    .headerimg {
+      width: 32px;
+      height: 32px;
+      margin-right: 10px;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 24px;
+      color: #00a650;
+    }
+    .refresh-btn {
+      margin-left: auto;
+      background: none;
+      border: none;
+      cursor: pointer;
+    }
+    .product-card {
+      display: flex;
+      padding: 10px;
+      background: white;
+      border-radius: 8px;
+      margin-bottom: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      padding: 5px;
+    }
+    .product-image {
+      width: 80px;
+      height: 80px;
+      object-fit: contain;
+      margin-right: 10px;
+    }
+    .product-info {
+      flex: 1;
+    }
+    .product-title {
+      margin: 0 0 5px 0;
+      font-size: 14px;
+      color: #333;
+    }
+    .product-description {
+      margin: 0;
+      font-size: 12px;
+      color: #666;
+    }
+    .action-buttons {
+      margin-inline: 3px;
+    }
+    .delete-btn {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 5px;
+    }
+    .delete-btn:hover {
+      transform: scale(1.1);
+    }
+    .load-more {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      text-align: center;
+      background: none;
+      border: none;
+      color: #00a650;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <img class="headerimg" src="/IMG/logo_128.png" alt="Product Remider">
+    <h1>Product Remider</h1>
+    <button class="refresh-btn"><img src="/IMG/reload.png" alt="Reload" width="24px" height="24px"></button>
+  </div>
+  <div id="products-container"></div>
+  <button class="load-more">More</button>
+  <script src="popup.js"></script>
+</body>
+</html>
